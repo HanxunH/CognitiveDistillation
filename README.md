@@ -52,8 +52,9 @@ python train.py --exp_path $exp_path \
 
 ##### Run detections
 The following command will save the detection results (e.g., masks of Cognitive Distillation, a confidence score for other baselines) to $exp_path.
-- **--method** argument specifies detection methods ['CD', 'AC', 'ABL', SS', 'STRIP'].
+- **--method** argument specifies detection methods ['CD', 'ABL', 'Feature', 'FCT', 'STRIP'].
 - **$gamma** is the hyperparameter value for Cognitive Distillation
+- 'Feature' is used for extract deep features (used by AC and SS).
 - ABL does not need to run detection. All training losses are stored in the $exp_path.
 
 ```console
