@@ -57,7 +57,7 @@ The following command will save the detection results (e.g., masks of Cognitive 
 - ABL does not need to run detection. All training losses are stored in the $exp_path.
 
 ```console
-python detect.py --exp_path $exp_path \
+python extract.py --exp_path $exp_path \
  --exp_config $exp_config \
  --exp_name $exp_name \
  --method "CD" --gamma $gamma
