@@ -25,7 +25,7 @@ dataset:
   train_tf_op: ISSBAImageNet
   test_tf_op: ISSBAImageNet
   target_label: 0
-  bd_ratio: 0.01
+  bd_ratio: 0.025
   poison_test_d_type: ISSBAImageNet
   train_path: /data/gpfs/projects/punim0784/datasets/sub-imagenet-200
   test_path: /data/gpfs/projects/punim0784/datasets/sub-imagenet-200
