@@ -8,7 +8,7 @@ Code for ICLR 2023 Paper ["Detecting Cognitive Backdoors within an Image"](https
 - **p**: the L_p norm constraint of the mask.
 - **gamma (alpha used in the paper) and beta**: hyperparameters for the objective function. 
 - **num_steps***: number of steps for extracting the mask.
-```
+```python
 from cognitive_distillation import CognitiveDistillation
 
 images = # batch of images (torch.Tensor) [b,c,h,w]
@@ -22,7 +22,7 @@ cognitive_pattern = images * masks # extracted cognitive pattern (torch.Tensor) 
 ```
 ---
 ## Visualizations of the masks and Cognitive Patterns
-![Alt text](Examples/BadNetImageNet_rn18_logits_layer_clean.png)
+![Alt text](examples/BadNetImageNet_rn18_logits_layer_clean.png)
 
 
 ---
