@@ -33,7 +33,7 @@ cognitive_pattern = images * masks # extracted cognitive pattern (torch.Tensor) 
 - Dynamic attack generator can be downloaded from [Dyanamic Attack GitHub repo](https://github.com/VinAIResearch/input-aware-backdoor-attack-release)
 - For DFST attack, data can be generated from [DFST GitHub repo](https://github.com/Megum1/DFST)
 - Other triggers (trigger folder in this repo) can be downloaded from this [Google Drive](https://drive.google.com/drive/folders/1U2r0Ov2S32Eb8TpolpXHzHTSLG6KdHfD?usp=sharing)
-- Frequency detector model weights be downloaded from this [Google Drive](https://drive.google.com/drive/folders/1U2r0Ov2S32Eb8TpolpXHzHTSLG6KdHfD?usp=sharing). Note that this model is trained on the GTSRB dataset (reproduced using PyTorch), based on [
+- Frequency detector model weights can be downloaded from this [Google Drive](https://drive.google.com/drive/folders/1U2r0Ov2S32Eb8TpolpXHzHTSLG6KdHfD?usp=sharing). Note that this model is trained on the GTSRB dataset (reproduced using PyTorch), based on [
 frequency-backdoor](https://github.com/YiZeng623/frequency-backdoor/blob/main/Sec4_Frequency_Detection/Train_Detection.ipynb).
 
 
