@@ -24,9 +24,9 @@ class ConvBrunch(nn.Module):
         return x
 
 
-class Detecor(nn.Module):
+class Detector(nn.Module):
     def __init__(self):
-        super(Detecor, self).__init__()
+        super(Detector, self).__init__()
         self.block1 = nn.Sequential(
             ConvBrunch(3, 32, 3),
             ConvBrunch(32, 32, 3),
@@ -72,7 +72,7 @@ def convert_dct2(data):
 class FrequencyAnalysis():
     def __init__(self, input_size=32):
         if input_size == 32:
-            self.clf = Detecor().to(device)
+            self.clf = Detector().to(device)
             ckpt = torch.load('checkpoints/frequency_detector_gtsrb_v2.pt') # trained on gtsrb, use for CIFAR evaluation 
             self.clf.load_state_dict(ckpt)
             self.clf.eval()
