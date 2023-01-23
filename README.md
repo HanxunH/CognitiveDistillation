@@ -3,7 +3,7 @@
 Code for ICLR 2023 Paper ["Detecting Cognitive Backdoors within an Image"](https://openreview.net/forum?id=S3D9NLzjnQ5)
 
 --- 
-## Use Cognitive Distilation on any pretrained model and images. 
+## Use Cognitive Distilation on a pretrained model and images. 
 - **lr:** the learning rate (step size) for extracting the mask.
 - **p**: the L_p norm constraint of the mask.
 - **gamma (alpha used in the paper) and beta**: hyperparameters for the objective function. 
