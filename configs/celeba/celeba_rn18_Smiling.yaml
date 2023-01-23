@@ -1,0 +1,31 @@
+epochs: 5
+grad_clip: -1
+log_frequency: 50
+criterion:
+  name: CrossEntropyLoss
+model:
+  name: AttributesResNet18
+  num_attributes: 1
+optimizer:
+  name: SGD
+  lr: 0.01
+  weight_decay: 0.0005
+  momentum: 0.9
+scheduler:
+  name: MultiStepLR
+  milestones:
+  - 2
+  - 4
+  gamma: 0.1
+dataset:
+  name: DatasetGenerator
+  train_bs: 500
+  eval_bs: 500
+  n_workers: 4
+  train_d_type: CustomCelebA
+  test_d_type: CustomCelebA
+  train_tf_op: CelebA
+  test_tf_op: CelebA
+  train_path: /data/projects/punim0784/datasets/
+  test_path: /data/projects/punim0784/datasets/
+  attr_targets: Smiling

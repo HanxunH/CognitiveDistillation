@@ -1,0 +1,34 @@
+num_classes: 200
+epochs: 50
+grad_clip: -1
+log_frequency: 50
+warmup_epochs: 0
+lr: 0.1
+min_lr: 1.0e-06
+criterion:
+  name: CrossEntropyLoss
+model:
+  name: EfficientNetB0
+  num_classes: $num_classes
+optimizer:
+  name: SGD
+  lr: $lr
+  weight_decay: 0.0001
+  momentum: 0.9
+dataset:
+  name: DatasetGenerator
+  train_bs: 32
+  eval_bs: 64
+  n_workers: 2
+  train_d_type: ISSBAImageNet
+  test_d_type: ISSBAImageNetClean
+  train_tf_op: ISSBAImageNet
+  test_tf_op: ISSBAImageNet
+  target_label: 0
+  bd_ratio: 0.01
+  poison_test_d_type: ISSBAImageNet
+  train_path: /data/gpfs/projects/punim0784/datasets/sub-imagenet-200
+  test_path: /data/gpfs/projects/punim0784/datasets/sub-imagenet-200
+  backdoor_path: /data/gpfs/projects/punim0784/datasets/sub-imagenet-200-bd/inject_a
+  poison_rate: 0.01
+sync_bn: true

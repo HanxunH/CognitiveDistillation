@@ -1,0 +1,6 @@
+torch
+torchvision
+mlconfig
+scikit-learn
+scipy
+pilgram

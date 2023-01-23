@@ -1,0 +1,33 @@
+num_classes: 10
+epochs: 60
+grad_clip: -1
+log_frequency: 50
+criterion:
+  name: CrossEntropyLoss
+model:
+  name: GoogLeNet
+  num_classes: $num_classes
+optimizer:
+  name: SGD
+  lr: 0.1
+  weight_decay: 0.0005
+  momentum: 0.9
+scheduler:
+  name: MultiStepLR
+  milestones:
+  - 45
+  - 60
+  gamma: 0.1
+dataset:
+  name: DatasetGenerator
+  train_bs: 100
+  eval_bs: 100
+  n_workers: 4
+  train_d_type: BadNetCIFAR10
+  test_d_type: CIFAR10
+  train_tf_op: NoAug
+  test_tf_op: NoAug
+  poison_rate: 0.05
+  poison_test_d_type: BadNetCIFAR10
+  train_path: /data/projects/punim0784/datasets/
+  test_path: /data/projects/punim0784/datasets/

@@ -1,0 +1,33 @@
+num_classes: 200
+epochs: 50
+grad_clip: -1
+log_frequency: 50
+warmup_epochs: 0
+lr: 0.1
+min_lr: 1.0e-06
+criterion:
+  name: CrossEntropyLoss
+model:
+  name: ResNet18_200
+  num_classes: $num_classes
+optimizer:
+  name: SGD
+  lr: $lr
+  weight_decay: 0.0001
+  momentum: 0.9
+dataset:
+  name: DatasetGenerator
+  train_bs: 64
+  eval_bs: 64
+  n_workers: 2
+  train_d_type: BadNetImageNet
+  test_d_type: ImageNetSubset
+  train_tf_op: BadNetImageNet
+  test_tf_op: BadNetImageNet
+  target_label: 0
+  bd_ratio: 0.01
+  poison_test_d_type: BadNetImageNet
+  train_path: /data/gpfs/projects/punim0784/datasets/ILSVRC2012
+  test_path: /data/gpfs/projects/punim0784/datasets/ILSVRC2012
+  poison_rate: 0.025
+sync_bn: true
