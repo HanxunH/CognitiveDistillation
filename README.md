@@ -1,6 +1,6 @@
 # Detecting Cognitive Backdoors within an Image
 
-Code for ICLR 2023 Paper ["Detecting Cognitive Backdoors within an Image"](https://openreview.net/forum?id=S3D9NLzjnQ5)
+Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://openreview.net/forum?id=S3D9NLzjnQ5)
 
 --- 
 ## Use Cognitive Distilation on a pretrained model and images. 
@@ -78,7 +78,7 @@ python detect_analysis.py --exp_path $exp_path \
 If you use this code in your work, please cite the accompanying paper:
 ```
 @inproceedings{huang2023distilling,
-  title={Distilling Cognitive Backdoor within an Image},
+  title={Distilling Cognitive Backdoor Patterns within an Image},
   author={Huang, Hanxun and Ma, Xingjun and Erfani, Sarah and Bailey, James},
   booktitle={ICLR},
   year={2023}
