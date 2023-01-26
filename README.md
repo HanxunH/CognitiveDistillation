@@ -1,4 +1,4 @@
-# Detecting Cognitive Backdoors within an Image
+# Distilling Cognitive Backdoor Patterns within an Image
 
 Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://openreview.net/forum?id=S3D9NLzjnQ5)
 
