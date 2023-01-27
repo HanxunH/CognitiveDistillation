@@ -1,6 +1,6 @@
 # Distilling Cognitive Backdoor Patterns within an Image
 
-Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://openreview.net/forum?id=S3D9NLzjnQ5)
+Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://arxiv.org/pdf/2301.10908.pdf)
 
 --- 
 ## Use Cognitive Distilation on a pretrained model and images. 
