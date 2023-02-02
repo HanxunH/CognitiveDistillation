@@ -77,11 +77,13 @@ python detect_analysis.py --exp_path $exp_path \
 ## Citation
 If you use this code in your work, please cite the accompanying paper:
 ```
-@inproceedings{huang2023distilling,
-  title={Distilling Cognitive Backdoor Patterns within an Image},
-  author={Huang, Hanxun and Ma, Xingjun and Erfani, Sarah and Bailey, James},
-  booktitle={ICLR},
-  year={2023}
+@inproceedings{
+huang2023distilling,
+title={Distilling Cognitive Backdoor Patterns within an Image},
+author={Hanxun Huang and Xingjun Ma and Sarah Monazam Erfani and James Bailey},
+booktitle={ICLR},
+year={2023},
+}
 ```
 
 ## Acknowledgements
