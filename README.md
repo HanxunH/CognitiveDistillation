@@ -1,4 +1,4 @@
-# Distilling Cognitive Backdoor Patterns within an Image
+# Distilling Cognitive Backdoor Patterns within an Image: A SOTA Method for Backdoor Sample Detection
 
 Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://openreview.net/pdf?id=S3D9NLzjnQ5)
 
