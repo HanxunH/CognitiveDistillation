@@ -1,6 +1,6 @@
-# Detecting Cognitive Backdoors within an Image
+# Distilling Cognitive Backdoor Patterns within an Image: A SOTA Method for Backdoor Sample Detection
 
-Code for ICLR 2023 Paper ["Detecting Cognitive Backdoors within an Image"](https://openreview.net/forum?id=S3D9NLzjnQ5)
+Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://openreview.net/pdf?id=S3D9NLzjnQ5)
 
 --- 
 ## Use Cognitive Distilation on a pretrained model and images. 
@@ -77,11 +77,13 @@ python detect_analysis.py --exp_path $exp_path \
 ## Citation
 If you use this code in your work, please cite the accompanying paper:
 ```
-@inproceedings{huang2023distilling,
-  title={Distilling Cognitive Backdoor within an Image},
-  author={Huang, Hanxun and Ma, Xingjun and Erfani, Sarah and Bailey, James},
-  booktitle={ICLR},
-  year={2023}
+@inproceedings{
+huang2023distilling,
+title={Distilling Cognitive Backdoor Patterns within an Image},
+author={Hanxun Huang and Xingjun Ma and Sarah Monazam Erfani and James Bailey},
+booktitle={ICLR},
+year={2023},
+}
 ```
 
 ## Acknowledgements
