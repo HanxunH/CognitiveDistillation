@@ -1,6 +1,6 @@
 torch
 torchvision
-mlconfig
+mlconfig==0.1.0
 scikit-learn
 scipy
 pilgram
