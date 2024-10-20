@@ -8,14 +8,16 @@ Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Imag
 - **p**: the L_p norm constraint of the mask.
 - **gamma (alpha used in the paper) and beta**: hyperparameters for the objective function. 
 - **num_steps***: number of steps for extracting the mask.
+- **preprocessor:** image preprocessor. Example: if input normalization is used, use `torchvision.transforms.Normalize(mean, std)` if none, use `torch.nn.Identity()`.
 ```python
 from cognitive_distillation import CognitiveDistillation
 
 images = # batch of images (torch.Tensor) [b,c,h,w]
 model = # a pre-trained model (torch.nn.Module)
+preprocessor = torch.nn.Identity() # or torchvision.transforms.Normalize(mean, std)
 
 cd = CognitiveDistillation(lr=0.1, p=1, gamma=0.01, beta=10.0, num_steps=100)
-masks = cd(model, images) # the extracted masks (torch.Tensor) [b,1,h,w]
+masks = cd(model, images, preprocessor=preprocessor) # the extracted masks (torch.Tensor) [b,1,h,w]
 cognitive_pattern = images * masks # extracted cognitive pattern (torch.Tensor) [b,c,h,w]
 
 

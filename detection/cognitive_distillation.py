@@ -27,16 +27,18 @@ class CognitiveDistillation(nn.Module):
         mask = (torch.tanh(mask) + 1) / 2
         return mask
 
-    def forward(self, model, images, labels=None):
+    def forward(self, model, images, preprocessor=torch.nn.Identity(), labels=None):
         model.eval()
+        if torch.min(images) < 0 or torch.max(images) > 1:
+            raise('images should be normalized')
         b, c, h, w = images.shape
         mask = torch.ones(b, self.mask_channel, h, w).to(images.device)
         mask_param = nn.Parameter(mask)
         optimizerR = torch.optim.Adam([mask_param], lr=self.lr, betas=(0.1, 0.1))
         if self.get_features:
-            features, logits = model(images)
+            features, logits = model(preprocessor(images))
         else:
-            logits = model(images).detach()
+            logits = model(preprocessor(images)).detach()
         for step in range(self.num_steps):
             optimizerR.zero_grad()
             mask = self.get_raw_mask(mask_param).to(images.device)
