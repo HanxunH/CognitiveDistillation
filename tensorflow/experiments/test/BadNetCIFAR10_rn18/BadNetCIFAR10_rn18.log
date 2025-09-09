@@ -1,0 +1,18 @@
+2025-08-02 18:59:06,890 TensorFlow Version: 2.19.0
+2025-08-02 18:59:06,890 Python Version: 3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]
+2025-08-02 18:59:06,890 GPU List: ['/physical_device:GPU:0']
+2025-08-02 18:59:06,890 seed: 0
+2025-08-02 18:59:06,890 exp_name: BadNetCIFAR10_rn18
+2025-08-02 18:59:06,890 exp_path: experiments/test
+2025-08-02 18:59:06,890 exp_config: ../configs/backdoor_exp/cifar/poison_rate_0.010
+2025-08-02 18:59:06,890 load_model: False
+2025-08-02 18:59:06,890 data_parallel: False
+2025-08-02 18:59:06,890 num_classes: 10
+2025-08-02 18:59:06,890 epochs: 60
+2025-08-02 18:59:06,890 grad_clip: -1
+2025-08-02 18:59:06,890 log_frequency: 50
+2025-08-02 18:59:06,891 criterion: {'name': 'CrossEntropyLoss'}
+2025-08-02 18:59:06,891 model: {'name': 'ResNet18', 'num_classes': 10}
+2025-08-02 18:59:06,891 optimizer: {'name': 'SGD', 'lr': 0.1, 'weight_decay': 0.0005, 'momentum': 0.9}
+2025-08-02 18:59:06,891 scheduler: {'name': 'MultiStepLR', 'milestones': [45, 60], 'gamma': 0.1}
+2025-08-02 18:59:06,891 dataset: {'name': 'DatasetGenerator', 'train_bs': 100, 'eval_bs': 100, 'n_workers': 4, 'train_d_type': 'BadNetCIFAR10', 'test_d_type': 'CIFAR10', 'train_tf_op': 'NoAug', 'test_tf_op': 'NoAug', 'poison_rate': 0.01, 'poison_test_d_type': 'BadNetCIFAR10', 'train_path': '/data/projects/punim0784/datasets/', 'test_path': '/data/projects/punim0784/datasets/'}

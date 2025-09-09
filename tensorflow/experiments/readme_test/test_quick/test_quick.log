@@ -1,0 +1,96 @@
+2025-08-02 19:12:05,265 TensorFlow Version: 2.19.0
+2025-08-02 19:12:05,265 Python Version: 3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]
+2025-08-02 19:12:05,265 GPU List: ['/physical_device:GPU:0']
+2025-08-02 19:12:05,265 seed: 0
+2025-08-02 19:12:05,265 exp_name: test_quick
+2025-08-02 19:12:05,265 exp_path: experiments/readme_test
+2025-08-02 19:12:05,265 exp_config: ../configs/test_tf
+2025-08-02 19:12:05,265 load_model: False
+2025-08-02 19:12:05,265 data_parallel: False
+2025-08-02 19:12:05,265 num_classes: 10
+2025-08-02 19:12:05,265 epochs: 2
+2025-08-02 19:12:05,265 grad_clip: -1
+2025-08-02 19:12:05,265 log_frequency: 10
+2025-08-02 19:12:05,265 criterion: {'name': 'CrossEntropyLoss'}
+2025-08-02 19:12:05,265 model: {'name': 'ResNet18', 'num_classes': 10}
+2025-08-02 19:12:05,265 optimizer: {'name': 'SGD', 'lr': 0.1, 'weight_decay': 0.0005, 'momentum': 0.9}
+2025-08-02 19:12:05,265 scheduler: {'name': 'MultiStepLR', 'milestones': [1, 2], 'gamma': 0.1}
+2025-08-02 19:12:05,265 dataset: {'name': 'DatasetGenerator', 'train_bs': 50, 'eval_bs': 50, 'n_workers': 0, 'train_d_type': 'BadNetCIFAR10', 'test_d_type': 'CIFAR10', 'train_tf_op': 'NoAug', 'test_tf_op': 'NoAug', 'poison_rate': 0.01, 'poison_test_d_type': 'BadNetCIFAR10', 'train_path': '/root/CognitiveDistillation/data/', 'test_path': '/root/CognitiveDistillation/data/'}
+2025-08-02 19:12:07,943 ====================Training Epoch 0====================
+2025-08-02 19:13:06,004 epoch=0 global_step=0 acc_avg=0.0600 loss_avg=3.1610 lr=0.1000 time=0.87it/s
+2025-08-02 19:13:07,913 epoch=0 global_step=10 acc_avg=0.0909 loss_avg=7.1737 lr=0.1000 time=5.28it/s
+2025-08-02 19:13:09,806 epoch=0 global_step=20 acc_avg=0.0981 loss_avg=6.9859 lr=0.1000 time=5.33it/s
+2025-08-02 19:13:11,695 epoch=0 global_step=30 acc_avg=0.1026 loss_avg=5.9317 lr=0.1000 time=5.30it/s
+2025-08-02 19:13:13,597 epoch=0 global_step=40 acc_avg=0.1044 loss_avg=5.1992 lr=0.1000 time=5.28it/s
+2025-08-02 19:13:15,514 epoch=0 global_step=50 acc_avg=0.1161 loss_avg=4.7669 lr=0.1000 time=5.27it/s
+2025-08-02 19:13:17,418 epoch=0 global_step=60 acc_avg=0.1252 loss_avg=4.4687 lr=0.1000 time=5.17it/s
+2025-08-02 19:13:19,338 epoch=0 global_step=70 acc_avg=0.1290 loss_avg=4.2208 lr=0.1000 time=5.27it/s
+2025-08-02 19:13:21,250 epoch=0 global_step=80 acc_avg=0.1299 loss_avg=4.0068 lr=0.1000 time=5.29it/s
+2025-08-02 19:13:23,150 epoch=0 global_step=90 acc_avg=0.1354 loss_avg=3.8290 lr=0.1000 time=5.28it/s
+2025-08-02 19:13:25,086 epoch=0 global_step=100 acc_avg=0.1396 loss_avg=3.6833 lr=0.1000 time=5.15it/s
+2025-08-02 19:13:27,012 epoch=0 global_step=110 acc_avg=0.1427 loss_avg=3.5510 lr=0.1000 time=5.22it/s
+2025-08-02 19:13:28,925 epoch=0 global_step=120 acc_avg=0.1471 loss_avg=3.4432 lr=0.1000 time=5.23it/s
+2025-08-02 19:13:30,854 epoch=0 global_step=130 acc_avg=0.1492 loss_avg=3.3528 lr=0.1000 time=5.22it/s
+2025-08-02 19:13:32,789 epoch=0 global_step=140 acc_avg=0.1548 loss_avg=3.2696 lr=0.1000 time=5.23it/s
+2025-08-02 19:13:34,704 epoch=0 global_step=150 acc_avg=0.1562 loss_avg=3.1989 lr=0.1000 time=5.25it/s
+2025-08-02 19:13:36,615 epoch=0 global_step=160 acc_avg=0.1599 loss_avg=3.1376 lr=0.1000 time=5.24it/s
+2025-08-02 19:13:38,528 epoch=0 global_step=170 acc_avg=0.1630 loss_avg=3.0808 lr=0.1000 time=5.21it/s
+2025-08-02 19:13:40,447 epoch=0 global_step=180 acc_avg=0.1651 loss_avg=3.0315 lr=0.1000 time=5.23it/s
+2025-08-02 19:13:42,370 epoch=0 global_step=190 acc_avg=0.1684 loss_avg=2.9861 lr=0.1000 time=5.22it/s
+2025-08-02 19:13:44,289 epoch=0 global_step=200 acc_avg=0.1713 loss_avg=2.9459 lr=0.1000 time=5.23it/s
+2025-08-02 19:13:46,203 epoch=0 global_step=210 acc_avg=0.1736 loss_avg=2.9112 lr=0.1000 time=5.27it/s
+2025-08-02 19:13:48,112 epoch=0 global_step=220 acc_avg=0.1768 loss_avg=2.8733 lr=0.1000 time=5.25it/s
+2025-08-02 19:13:50,024 epoch=0 global_step=230 acc_avg=0.1792 loss_avg=2.8390 lr=0.1000 time=5.29it/s
+2025-08-02 19:13:51,926 epoch=0 global_step=240 acc_avg=0.1808 loss_avg=2.8048 lr=0.1000 time=5.26it/s
+2025-08-02 19:13:53,830 epoch=0 global_step=250 acc_avg=0.1836 loss_avg=2.7741 lr=0.1000 time=5.26it/s
+2025-08-02 19:13:55,731 epoch=0 global_step=260 acc_avg=0.1867 loss_avg=2.7456 lr=0.1000 time=5.31it/s
+2025-08-02 19:13:57,660 epoch=0 global_step=270 acc_avg=0.1877 loss_avg=2.7210 lr=0.1000 time=4.75it/s
+2025-08-02 19:13:59,570 epoch=0 global_step=280 acc_avg=0.1895 loss_avg=2.6964 lr=0.1000 time=5.03it/s
+2025-08-02 19:15:53,072 TensorFlow Version: 2.19.0
+2025-08-02 19:15:53,072 GPU List: ['/physical_device:GPU:0']
+2025-08-02 19:15:53,072 seed: 0
+2025-08-02 19:15:53,072 exp_name: test_quick
+2025-08-02 19:15:53,072 exp_path: experiments/readme_test
+2025-08-02 19:15:53,072 exp_config: ../configs/test_tf
+2025-08-02 19:15:53,072 data_parallel: False
+2025-08-02 19:15:53,072 method: CD
+2025-08-02 19:15:53,072 p: 1
+2025-08-02 19:15:53,072 gamma: 0.01
+2025-08-02 19:15:53,073 beta: 1.0
+2025-08-02 19:15:53,073 num_steps: 5
+2025-08-02 19:15:53,073 step_size: 0.1
+2025-08-02 19:15:53,073 mask_channel: 1
+2025-08-02 19:15:53,073 norm_only: False
+2025-08-02 19:15:53,073 num_classes: 10
+2025-08-02 19:15:53,073 epochs: 2
+2025-08-02 19:15:53,073 grad_clip: -1
+2025-08-02 19:15:53,073 log_frequency: 10
+2025-08-02 19:15:53,073 criterion: {'name': 'CrossEntropyLoss'}
+2025-08-02 19:15:53,073 model: {'name': 'ResNet18', 'num_classes': 10}
+2025-08-02 19:15:53,073 optimizer: {'name': 'SGD', 'lr': 0.1, 'weight_decay': 0.0005, 'momentum': 0.9}
+2025-08-02 19:15:53,073 scheduler: {'name': 'MultiStepLR', 'milestones': [1, 2], 'gamma': 0.1}
+2025-08-02 19:15:53,073 dataset: {'name': 'DatasetGenerator', 'train_bs': 50, 'eval_bs': 50, 'n_workers': 0, 'train_d_type': 'BadNetCIFAR10', 'test_d_type': 'CIFAR10', 'train_tf_op': 'NoAug', 'test_tf_op': 'NoAug', 'poison_rate': 0.01, 'poison_test_d_type': 'BadNetCIFAR10', 'train_path': '/root/CognitiveDistillation/data/', 'test_path': '/root/CognitiveDistillation/data/'}
+2025-08-02 19:16:20,102 TensorFlow Version: 2.19.0
+2025-08-02 19:16:20,102 GPU List: ['/physical_device:GPU:0']
+2025-08-02 19:16:20,103 seed: 0
+2025-08-02 19:16:20,103 exp_name: test_quick
+2025-08-02 19:16:20,103 exp_path: experiments/readme_test
+2025-08-02 19:16:20,103 exp_config: ../configs/test_tf
+2025-08-02 19:16:20,103 data_parallel: False
+2025-08-02 19:16:20,103 method: CD
+2025-08-02 19:16:20,103 p: 1
+2025-08-02 19:16:20,103 gamma: 0.01
+2025-08-02 19:16:20,103 beta: 1.0
+2025-08-02 19:16:20,103 num_steps: 5
+2025-08-02 19:16:20,103 step_size: 0.1
+2025-08-02 19:16:20,103 mask_channel: 1
+2025-08-02 19:16:20,103 norm_only: False
+2025-08-02 19:16:20,103 num_classes: 10
+2025-08-02 19:16:20,103 epochs: 2
+2025-08-02 19:16:20,103 grad_clip: -1
+2025-08-02 19:16:20,103 log_frequency: 10
+2025-08-02 19:16:20,103 criterion: {'name': 'CrossEntropyLoss'}
+2025-08-02 19:16:20,103 model: {'name': 'ResNet18', 'num_classes': 10}
+2025-08-02 19:16:20,103 optimizer: {'name': 'SGD', 'lr': 0.1, 'weight_decay': 0.0005, 'momentum': 0.9}
+2025-08-02 19:16:20,103 scheduler: {'name': 'MultiStepLR', 'milestones': [1, 2], 'gamma': 0.1}
+2025-08-02 19:16:20,103 dataset: {'name': 'DatasetGenerator', 'train_bs': 50, 'eval_bs': 50, 'n_workers': 0, 'train_d_type': 'BadNetCIFAR10', 'test_d_type': 'CIFAR10', 'train_tf_op': 'NoAug', 'test_tf_op': 'NoAug', 'poison_rate': 0.01, 'poison_test_d_type': 'BadNetCIFAR10', 'train_path': '/root/CognitiveDistillation/data/', 'test_path': '/root/CognitiveDistillation/data/'}

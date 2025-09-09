@@ -1,0 +1,37 @@
+# Quick test config for TensorFlow implementation
+num_classes: 10
+epochs: 2  # Quick test with 2 epochs
+grad_clip: -1
+log_frequency: 10
+
+criterion:
+  name: CrossEntropyLoss
+
+model:
+  name: ResNet18
+  num_classes: 10
+
+optimizer:
+  name: SGD
+  lr: 0.1
+  weight_decay: 0.0005
+  momentum: 0.9
+
+scheduler:
+  name: MultiStepLR
+  milestones: [1, 2]
+  gamma: 0.1
+
+dataset:
+  name: DatasetGenerator
+  train_bs: 50
+  eval_bs: 50
+  n_workers: 0  # Avoid multiprocessing issues
+  train_d_type: BadNetCIFAR10
+  test_d_type: CIFAR10
+  train_tf_op: NoAug
+  test_tf_op: NoAug
+  poison_rate: 0.01
+  poison_test_d_type: BadNetCIFAR10
+  train_path: /root/CognitiveDistillation/data/
+  test_path: /root/CognitiveDistillation/data/
