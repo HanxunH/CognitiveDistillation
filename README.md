@@ -2,6 +2,14 @@
 
 Code for ICLR 2023 Paper ["Distilling Cognitive Backdoor Patterns within an Image"](https://openreview.net/pdf?id=S3D9NLzjnQ5)
 
+---
+This project supports implementations in the following frameworks:
+
+- **PyTorch** (default)  
+- [**PaddlePaddle**](https://github.com/HanxunH/CognitiveDistillation/tree/main/paddlepaddle)  
+- [**MindSpore**](https://github.com/HanxunH/CognitiveDistillation/tree/main/mindspore)  
+- [**TensorFlow**](https://github.com/HanxunH/CognitiveDistillation/tree/main/tensorflow)
+
 --- 
 ## Use Cognitive Distilation on a pretrained model and images. 
 - **lr:** the learning rate (step size) for extracting the mask.
